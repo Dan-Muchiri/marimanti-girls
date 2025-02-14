@@ -39,3 +39,26 @@ h1, h2, h3, h4, h5{
 li, p{
   font-family: var(--font--secondary);
 }
+
+a{
+    background-color: var(--base--primary);
+    color: var(--text--light);
+    justify-content: center;
+    align-items: center;
+    height: 4.3rem;
+    padding: 0 2.5rem;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 25px;
+    font-family: var(--font--primary);
+    font-weight: 500;
+    border: none;
+    position: relative; /* Make this button the relative parent */
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+}
+
+a:hover{
+  background-color: var(--base--black);
+  color: var(--text--light);
+}

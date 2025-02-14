@@ -64,7 +64,7 @@
     padding: 0 1.5rem;
     font-size: 18px;
     font-family: var(--font--primary);
-    transition: background-color 0.5s ease-in-out, 
+    transition: background-color 0.3s ease-in-out, 
                 border 0.3s ease-in-out, 
                 transform 0.2s ease-in-out;
     position: relative;

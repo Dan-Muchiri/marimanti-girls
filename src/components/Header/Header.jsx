@@ -38,6 +38,7 @@ function Header() {
                     <a onClick={() => handleScroll("hero")}>Home</a>
                     <a onClick={() => handleScroll("about")}>About</a>
                     <a onClick={() => handleScroll("admission")}>Admission</a>
+                    <a onClick={() => handleScroll("clubs")}>Societies</a>
                     <a onClick={() => handleScroll("gallery")}>Gallery</a>
                     <a onClick={() => handleScroll("contact")}>Contact</a>
                 </nav>

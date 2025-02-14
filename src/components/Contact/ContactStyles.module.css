@@ -1,6 +1,6 @@
 .contactSection {
     display: flex;
-    height: 90vh; /* Full viewport height */
+    height: 100vh; /* Full viewport height */
 }
 
 /* Image container - Left side */

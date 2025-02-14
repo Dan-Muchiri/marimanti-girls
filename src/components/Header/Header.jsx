@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import styles from "./HeaderStyles.module.css";
 import { FaBars, FaTimes} from 'react-icons/fa';
 
@@ -10,6 +9,23 @@ function Header() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            const headerOffset = 88; // Adjust according to your header height
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - headerOffset;
+    
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+            });
+    
+            setIsMenuOpen(false); // Close menu on mobile after click
+        }
+    };
+    
+
   return (
     <section id='header' className={styles.container}>
         <div className={styles.sub}>
@@ -18,13 +34,13 @@ function Header() {
                     <p className={styles.logoName}>Marimanti Girls' High School</p>
                 </div>
                 <div className={`${styles.navBlock} ${isMenuOpen ? styles.showMenu : ''}`}>
-                    <nav className={styles.nav}>
-                        <a href="#hero" onClick={toggleMenu}>Home</a>
-                        <a href="#about" onClick={toggleMenu}>About</a>
-                        <a href="#admission" onClick={toggleMenu}>Admission</a>
-                        <a href="#gallery" onClick={toggleMenu}>Gallery</a>
-                        <a href="#contact" onClick={toggleMenu}>Contact</a>
-                    </nav>
+                <nav className={styles.nav}>
+                    <a onClick={() => handleScroll("hero")}>Home</a>
+                    <a onClick={() => handleScroll("about")}>About</a>
+                    <a onClick={() => handleScroll("admission")}>Admission</a>
+                    <a onClick={() => handleScroll("gallery")}>Gallery</a>
+                    <a onClick={() => handleScroll("contact")}>Contact</a>
+                </nav>
                 </div>
 
                 <div className={styles.menuIcon} onClick={toggleMenu}>

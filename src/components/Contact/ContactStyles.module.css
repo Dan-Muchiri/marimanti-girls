@@ -1,0 +1,238 @@
+.contactSection {
+    display: flex;
+    height: 90vh; /* Full viewport height */
+}
+
+/* Image container - Left side */
+.imageContainer {
+    flex: 1; /* Takes 50% width */
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container */
+}
+
+/* Content container - Right side */
+.content {
+    flex: 0.8; /* Adjust width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    background-color: white;
+}
+
+.content h2 {
+    font-size: 3rem;
+    color: var(--text--dark);
+    letter-spacing: 0.03em;
+    padding-bottom: 1rem;
+    border-bottom: 0.3rem solid var(--base--primary);
+    width: fit-content;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.content h5 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: var(--text--dark);
+    margin: 30px 0;
+}
+
+.content p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: black;
+    margin: 7px;
+}
+
+.content a {
+    margin-top: 30px;
+}
+
+/* Form Styles */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.formGroup {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease-in-out;
+    background-color: #f9f9f9;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+
+
+.required {
+    color: red;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.subButton {
+    background-color: var(--base--primary);
+    color: var(--text--light);
+    justify-content: center;
+    align-items: center;
+    height: 3.3rem;
+    padding: 0 .5rem;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 25px;
+    font-family: var(--font--primary);
+    font-weight: 500;
+    border: none;
+    position: relative; /* Make this button the relative parent */
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    max-width: 150px;
+    border-radius: 0;
+}
+
+.subButton:hover {
+    background-color: var(--base--black);
+    color: var(--text--light);
+}
+
+.errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .contactSection {
+        flex-direction: column;
+        height: auto; /* Adjust height for better fit */
+        align-items: center;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 40vh; /* Adjust image height */
+    }
+
+    .image {
+        height: 100%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px; /* Reduce padding */
+        text-align: left; /* Center align text */
+    }
+
+    .content h2 {
+        font-size: 2.2rem;
+        border-bottom-width: 0.2rem;
+    }
+
+    .content h5 {
+        font-size: 1.8rem;
+        margin: 10px 0;
+    }
+
+    .content p {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .formContainer {
+        width: 90%; /* Use more screen space */
+        padding: 15px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .subButton {
+        font-size: 16px;
+        padding: 12px;
+        width: 100%; /* Full-width for easier clicks */
+    }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+    .imageContainer {
+        height: 30vh;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .content h5 {
+        font-size: 1.4rem;
+    }
+
+    .content p {
+        font-size: 0.95rem;
+    }
+
+    .formContainer {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .subButton {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+

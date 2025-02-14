@@ -44,7 +44,6 @@
     height: 100vh;
     object-position: center;
     object-fit: cover; /* Cover the viewport properly */
-    background-color: #0c1f42;
     padding: 0;
     display: none; /* Change this conditionally based on screen size */
 }

@@ -110,7 +110,6 @@
         display: none; /* Hide navigation by default on small screens */
         flex-direction: column; /* Stack items vertically when displayed */
         gap: 0;
-        background-color: var(--base--white); /* Background color for mobile menu */
         position: absolute; /* Make the nav absolute */
         top: 100%; /* Place it below the header */
         left: 0; 

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --text--light: #f2f5f7;
+  --base--white: white;
+  --base--primary: #00703C;
+  --text--dark: #070d13;
+  --base--black: black;
+  --font--primary: "Bebas Neue", serif;
+  --font--secondary: "Noto Serif", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%
+}
+
+body {
+  color: #333;
+  background-color: #fff;
+  min-height: 100%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block
+}
+
+h1, h2, h3, h4, h5{
+  font-family: var(--font--primary);
+}
+
+li, p{
+  font-family: var(--font--secondary);
+}

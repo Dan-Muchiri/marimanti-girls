@@ -1,0 +1,149 @@
+.container {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it appears above other content */
+    height: 5.5rem;
+    background: var(--base--primary);
+}
+
+.sub {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Space items between */
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Use the full height of the parent */
+    grid-column-gap: 2rem; /* Maintain column gap */
+    grid-row-gap: 2rem; /* Maintain row gap (not needed for flex) */
+    padding: 0 60px;
+}
+/* Logo Style */
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Ensure logo stays within header */
+}
+
+/* Logo Image Style */
+.logoImage {
+    width: 50px; /* Set a default width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure logo doesn't exceed container size */
+    object-fit: contain; /* Make sure the image fits within its container */
+    padding: 5px 0; /* Adjust padding */
+    border-radius: 40px;
+}
+
+.logoName{
+    font-size: 30px;
+    font-family: var(--font--primary);
+    color: var(--base--white);
+    max-width: 200px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+.navBlock{
+    margin-left: auto;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+/* Navigation Links */
+.nav a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text--dark);
+    background-color: var(--base--white);
+    justify-content: flex-start;
+    align-items: center;
+    height: 3.3rem;
+    padding: 0 1.5rem;
+    font-size: 18px;
+    font-family: var(--font--primary);
+    transition: background-color 0.5s ease-in-out, 
+                border 0.3s ease-in-out, 
+                transform 0.2s ease-in-out;
+    position: relative;
+    letter-spacing: 3px;
+    border: 1px solid transparent; /* Pre-set border to avoid layout shift */
+    box-sizing: border-box; /* Ensures border & padding don't affect size */
+}
+
+/* Hover Effect */
+.nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--base--white);
+    border: 1px solid var(--base--white);
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+/* Active (Click) Effect */
+.nav a:active {
+    transform: scale(0.98); /* Slight press effect */
+}
+
+
+
+/* Menu Icon (Hamburger) */
+.menuIcon {
+    display: none; /* Hide menu icon by default */
+    cursor: pointer;
+    background: none; /* Remove any default background */
+    border: none; /* Remove default border */
+    color: var(--base--white);
+}
+
+
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 1024px) {
+    .sub {
+        padding: 20px;
+    }
+
+    /* Navigation */
+    .nav {
+        display: none; /* Hide navigation by default on small screens */
+        flex-direction: column; /* Stack items vertically when displayed */
+        gap: 0;
+        background-color: var(--base--white); /* Background color for mobile menu */
+        position: absolute; /* Make the nav absolute */
+        top: 100%; /* Place it below the header */
+        left: 0; 
+        width: 100%; /* Full width for better touch interaction */
+        padding: 0; /* Add padding for space around links */
+        z-index: 1000; /* Ensure it stays on top */
+    }
+
+    .nav a {
+        background-color: var(--base--primary);
+        color: white; /* Ensure good contrast */
+        text-align: center; /* Center align text */
+        padding: 32px 25px; /* Add padding for better touch interaction */
+        font-size: 18px; /* Increase font size */
+    }
+    
+
+    /* Show Menu When Open */
+    .showMenu .nav {
+        display: flex; /* Flexbox to display the nav on menu open */
+    }
+
+    /* Hamburger Menu Icon */
+    .menuIcon {
+        display: block; /* Show the hamburger icon */
+        padding: 8px 15px; /* Add some space between the text/icon and the border */
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3px;
+    }
+
+}

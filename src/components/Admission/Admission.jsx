@@ -20,7 +20,7 @@ function Admission() {
   return (
     <section id="admission" className={styles.admissionSection}>
       <div className={styles.imageContainer}>
-        <img src="/public/admission.jpg" alt="Admission" className={styles.image} />
+        <img src="/admission.jpg" alt="Admission" className={styles.image} />
       </div>
       <div className={styles.content}>
         <h2>FORM 1 ADMISSION</h2>

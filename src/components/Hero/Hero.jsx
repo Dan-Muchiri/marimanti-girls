@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from "./HeroStyles.module.css";
 
 function Hero() {
+
+  useEffect(() => {
+    // Preload the images
+    const preloadImages = ["/landscape.jpg", "/potrait.jpg"];
+    preloadImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);

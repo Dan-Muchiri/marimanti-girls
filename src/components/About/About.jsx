@@ -22,14 +22,14 @@ function About() {
                 <div className={styles.card}>
                     <FaChalkboardTeacher className={styles.icon} />
                     <h3>Mission</h3>
-                    <p>To provide high-quality education that fosters leadership, academic achievement, and holistic development in young women.</p>
+                    <p>To provide a conducive learning environment required to enable the girl students realize their fullest potential and become responsible citizens and leaders.</p>
                 </div>
 
                 {/* Vision Card */}
                 <div className={styles.card}>
                     <FaGlobe className={styles.icon} />
                     <h3>Vision</h3>
-                    <p>To be a world-class institution empowering women to lead with integrity and contribute positively to their communities.</p>
+                    <p>To be a centre of excellence in all holistic learning.</p>
                 </div>
             </div>
         </div>

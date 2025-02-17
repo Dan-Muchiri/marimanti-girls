@@ -59,7 +59,6 @@ function Header() {
                         <Link to="/" onClick={() => handleScroll("about")}>About</Link>
                         <Link to="/" onClick={() => handleScroll("admission")}>Admission</Link>
                         <Link to="/" onClick={() => handleScroll("clubs")}>Societies</Link>
-                        <Link to="/" onClick={() => handleScroll("departments")}>Departments</Link>
                         <Link to="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
                         <Link to="/" onClick={() => handleScroll("contact")}>Contact</Link>
                     </nav>

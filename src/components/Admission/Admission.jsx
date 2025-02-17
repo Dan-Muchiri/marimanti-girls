@@ -23,10 +23,10 @@ function Admission() {
         <img src="/admission.jpg" alt="Admission" className={styles.image} />
       </div>
       <div className={styles.content}>
-        <h2>FORM 1 ADMISSION</h2>
-        <h5>Who is admitted in form 1?</h5>
+        <h2>GRADE 10 ADMISSION</h2>
+        <h5>Who is admitted in grade 10?</h5>
         <p>Being a public school, the students are allocated to the school by the Ministry of Education through Merit and Choice.</p>
-        <p>A student has to choose the school at his primary candidate class and has to achieve he required score.</p>
+        <p>A student has to choose the school at his primary candidate class and has to achieve the required score.</p>
         <a onClick={() => handleScroll("contact")}>Request Info</a>
       </div>
     </section>

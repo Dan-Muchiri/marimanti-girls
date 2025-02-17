@@ -35,8 +35,8 @@ function Contact() {
       </div>
       <div className={styles.content}>
         <h2>Contact Us</h2>
-        <p>Email: info@marimantigirlshigh.co.ke</p>
-        <p>Phone Number: +254123456789</p>
+        <p>Email: marimantigirls@gmail.com</p>
+        <p>Phone Number: +254722700361</p>
         <form className={styles.formContainer} onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label htmlFor="name">Name<span className={styles.required}>*</span></label>

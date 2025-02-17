@@ -5,7 +5,6 @@ import Header from './components/Header/Header';
 import About from './components/About/About';
 import Admission from './components/Admission/Admission';
 import Clubs from './components/Clubs/Clubs';
-import Departments from './components/Departments/Departments';
 import Gallery from './components/Gallery/Gallery';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
@@ -17,7 +16,6 @@ function Home() {
       <About />
       <Admission />
       <Clubs />
-      <Departments />
       <Contact />
     </>
   );

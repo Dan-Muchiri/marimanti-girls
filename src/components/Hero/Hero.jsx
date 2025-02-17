@@ -21,8 +21,8 @@ function Hero() {
     <section id='hero' className={styles.container}>
       <div className={styles.back}>
           <div className={styles.backImage}>
-            <img src="/landscape.jpg" className={styles.image} alt="Background" loading="lazy"/>
-            <img src="/potrait.jpg" className={styles.imageSmall} alt="Small Background" loading="lazy"/>
+            <img src="/landscape.jpg" className={styles.image} alt="Background" />
+            <img src="/potrait.jpg" className={styles.imageSmall} alt="Small Background" />
           </div>
           <div className={styles.overlay} /> {/* Background overlay */}
       </div>

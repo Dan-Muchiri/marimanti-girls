@@ -76,7 +76,7 @@ function Footer() {
             <Link to="/" onClick={() => handleScroll("about")}>About</Link>
             <Link to="/" onClick={() => handleScroll("admission")}>Admission</Link>
             <Link to="/" onClick={() => handleScroll("clubs")}>Societies</Link>
-            <Link to="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
+            <Link to="/gallery">Gallery</Link>
              <Link to="/" onClick={() => handleScroll("contact")}>Contact</Link>
         </div>
       </div>

@@ -20,7 +20,7 @@ function Admission() {
   return (
     <section id="admission" className={styles.admissionSection}>
       <div className={styles.imageContainer}>
-        <img src="/admission.jpg" alt="Admission" className={styles.image} />
+        <img src="/admission.jpg" alt="Admission" className={styles.image} loading="lazy"/>
       </div>
       <div className={styles.content}>
         <h2>GRADE 10 ADMISSION</h2>

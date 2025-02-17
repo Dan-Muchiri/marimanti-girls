@@ -31,7 +31,7 @@ function Contact() {
   return (
     <section id="contact" className={styles.contactSection}>
       <div className={styles.imageContainer}>
-        <img src="/contact.jpg" alt="Contact" className={styles.image} />
+        <img src="/contact.jpg" alt="Contact" className={styles.image} loading="lazy"/>
       </div>
       <div className={styles.content}>
         <h2>Contact Us</h2>

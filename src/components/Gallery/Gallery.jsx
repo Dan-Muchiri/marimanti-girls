@@ -10,7 +10,7 @@ function Gallery() {
       </div>
       <div className={styles.galleryContainer}>
         {imageList.map((src, index) => (
-          <img key={index} src={src} alt={`Gallery image ${index + 1}`} className={styles.galleryImage} />
+          <img key={index} src={src} alt={`Gallery image ${index + 1}`} className={styles.galleryImage} loading="lazy"/>
         ))}
       </div>
     </>

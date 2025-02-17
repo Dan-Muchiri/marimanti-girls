@@ -74,7 +74,7 @@
     grid-column-gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1030px) {
     .container {
         grid-template-columns: 1fr; /* Stack sections vertically */
         grid-column-gap: 0;

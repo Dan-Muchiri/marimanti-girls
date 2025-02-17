@@ -1,0 +1,56 @@
+.wAw {
+    padding: 3rem 0;
+    background-image: linear-gradient(#f9f9f9, #f0efef);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.wAw h2 {
+    margin: 0;
+    border-bottom: .5rem solid var(--base--primary);
+    font-size: 4.5rem;
+    line-height: 1.25;
+    color: var(--text--dark);
+    width: fit-content;
+}
+.galleryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased the min width */
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .galleryImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .galleryImage:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Media query to handle large screen sizes */
+  @media (min-width: 1200px) {
+    .galleryImage {
+      max-width: 100%;
+      max-height: 400px; /* Optionally adjust the max height to maintain aspect ratio */
+    }
+  }
+  
+  
+  

@@ -53,13 +53,13 @@ function Footer() {
           </div>
       </div>
       <div className={styles.sect}>
-        <div classname={styles.head}>
+        <div className={styles.head}>
           <h5 className={styles.head_h5}>Address</h5>
         </div>
         <div className={styles.content}>
           <p>P.O. BOX 30-60215 MARIMANTI, THARAKA</p>
         </div>
-        <div classname={styles.head}>
+        <div className={styles.head}>
           <h5 className={styles.head_h5}>Contact Us</h5>
         </div>
         <div className={styles.content}>
@@ -68,7 +68,7 @@ function Footer() {
         </div>
       </div>
       <div className={styles.sect}>
-        <div classname={styles.head}>
+        <div className={styles.head}>
           <h5 className={styles.head_h5}>Quick Links</h5>
         </div>
         <div className={styles.navigation}>
